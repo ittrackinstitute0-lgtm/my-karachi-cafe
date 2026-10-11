@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Karachi Café | Chai, Gupshup & Midnight Vibes</title>
+  <meta name="description" content="Experience the authentic soul of Karachi at My Karachi Café. From simmering Karak Doodh Patti to artisan coffees, fresh bun kababs, and fairy-lit open air nights.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Hanging Fairy Lights Overlay at the very top -->
+  <div class="fairy-lights-string" aria-hidden="true">
+    <div class="wire"></div>
+    <ul class="bulbs">
+      <li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li>
+      <li></li><li></li><li></li><li></li><li></li>
+    </ul>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo">
+        <span class="brand-sub">Welcome to</span>
+        <span class="brand-main">My Karachi <span class="cafe-tag">Café</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav" id="mainNav">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#ambience" class="nav-link">The Vibe</a></li>
+          <li><a href="#specials" class="nav-link">Specials</a></li>
+          <li><a href="#reservation" class="nav-link">Reservations</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons & Live Indicator -->
+      <div class="header-actions">
+        <div class="status-pill" title="Serving authentic Karachi chai right now">
+          <span class="status-dot"></span>
+          <span class="status-text">Open Till 3:30 AM</span>
+        </div>
+        <a href="#reservation" class="btn btn-primary btn-sm header-cta">
+          <i class="fa-solid fa-mug-hot"></i> Book Table
+        </a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <span class="drawer-title">My Karachi Café</span>
+      <button class="drawer-close" id="drawerClose">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#story" class="drawer-link"><i class="fa-solid fa-heart"></i> Our Story</a></li>
+      <li><a href="#menu" class="drawer-link"><i class="fa-solid fa-utensils"></i> Menu & Chai</a></li>
+      <li><a href="#ambience" class="drawer-link"><i class="fa-solid fa-camera"></i> Ambience & Vibe</a></li>
+      <li><a href="#specials" class="drawer-link"><i class="fa-solid fa-star"></i> Midnight Specials</a></li>
+      <li><a href="#reservation" class="drawer-link"><i class="fa-solid fa-chair"></i> Reserve a Table</a></li>
+      <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-location-dot"></i> Timings & Location</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="https://wa.me/923001234567" target="_blank" class="btn btn-accent w-100">
+        <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+
+  <!-- Hero Section with Cafe Wall Background -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-wrapper">
+      <img src="images/my-karachi-bg.jpg" alt="My Karachi Cafe wall featuring iconic landmarks mural under fairy lights" class="hero-bg-img">
+      <div class="hero-overlay"></div>
+      <div class="hero-spotlight"></div>
+    </div>
+
+    <div class="hero-content-wrapper">
+      <div class="container hero-container">
+        <div class="hero-badge">
+          <span class="badge-icon"><i class="fa-solid fa-moon"></i></span>
+          <span class="badge-text">City of Lights • Authentic Dhaba & Modern Bistro</span>
+        </div>
+
+        <h1 class="hero-title">
+          Chai, Charcha & <br>
+          <span class="highlight-calligraphy">Karachi's True Soul</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          From steaming brass kettles of Karak Doodh Patti to artisanal coffees and late-night crispy parathas, gather under our warm fairy lights for friendships, laughter, and timeless conversations.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-book-open"></i> Explore Full Menu
+          </a>
+          <a href="#reservation" class="btn btn-outline btn-lg">
+            <i class="fa-regular fa-calendar-check"></i> Reserve An Outdoor Table
+          </a>
+        </div>
+
+        <!-- Hero Highlights Quick Row -->
+        <div class="hero-perks">
+          <div class="perk-card">
+            <div class="perk-icon"><i class="fa-solid fa-mug-saucer"></i></div>
+            <div class="perk-info">
+              <h4>Clay Matka Chai</h4>
+              <p>Slow-brewed rich cardamom tea</p>
+            </div>
+          </div>
+
+          <div class="perk-card">
+            <div class="perk-icon"><i class="fa-solid fa-burger"></i></div>
+            <div class="perk-info">
+              <h4>Burns Road Bun Kababs</h4>
+              <p>Fresh, spicy, toasted to order</p>
+            </div>
+          </div>
+
+          <div class="perk-card">
+            <div class="perk-icon"><i class="fa-solid fa-guitar"></i></div>
+            <div class="perk-info">
+              <h4>Late Night Rooftop</h4>
+              <p>Fairy lights, ludo & live acoustic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#story" class="scroll-down-arrow" aria-label="Scroll to story">
+      <i class="fa-solid fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- Quick Info Bar (Timings / Location / Specials) -->
+  <div class="quick-strip">
+    <div class="container strip-grid">
+      <div class="strip-item">
+        <i class="fa-regular fa-clock strip-icon"></i>
+        <div>
+          <strong>Hours of Gupshup</strong>
+          <span>Everyday: 5:00 PM – 3:30 AM</span>
+        </div>
+      </div>
+      <div class="strip-item">
+        <i class="fa-solid fa-location-crosshairs strip-icon"></i>
+        <div>
+          <strong>Prime Karachi Spot</strong>
+          <span>Seaside Boulevard, Phase 8, DHA</span>
+        </div>
+      </div>
+      <div class="strip-item">
+        <i class="fa-solid fa-wifi strip-icon"></i>
+        <div>
+          <strong>Cozy Work & Hangout</strong>
+          <span>High-Speed Wi-Fi & Board Games</span>
+        </div>
+      </div>
+      <div class="strip-item">
+        <i class="fa-solid fa-phone strip-icon"></i>
+        <div>
+          <strong>Quick Order & Tables</strong>
+          <span>+92 300 2424242</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Story & Concept Section -->
+  <section class="section story-section" id="story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-media">
+          <div class="story-image-card main-img-card">
+            <img src="images/my-karachi-bg.jpg" alt="My Karachi wall with iconic landmarks painted with pride">
+            <div class="image-floating-badge">
+              <span class="badge-number">100%</span>
+              <span class="badge-label">Karachi Spirit</span>
+            </div>
+          </div>
+          <div class="story-accent-box">
+            <div class="accent-quote">
+              <i class="fa-solid fa-quote-left"></i>
+              <p>"Karachi doesn't sleep until the last kettle of chai is poured."</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-text">
+          <div class="section-tag">The Story Behind the Wall</div>
+          <h2 class="section-title">Where the City's Heartlines Come Alive</h2>
+          
+          <p class="lead-text">
+            Walk past our bright saffron-yellow wall, look up at the twinkling canopy of fairy lights, and you’ll find Karachi’s soul right here.
+          </p>
+          
+          <p class="body-p">
+            Painted with love right on our courtyard facade, you can trace the silhouette of <strong>Mazar-e-Quaid</strong>, the iconic banking towers, <strong>Frere Hall</strong>, and the gentle waves of the Arabian Sea dotted with traditional sailing boats.
+          </p>
+
+          <p class="body-p">
+            <strong>My Karachi Café</strong> is where the old-school charm of roadside chai khanas meets a refined, aesthetic open-air aesthetic. Whether you are unwinding after midnight with college buddies, finishing client work over a hazelnut cappuccino, or catching up over crispy parathas, there is always a warm wooden chair waiting for you.
+          </p>
+
+          <div class="story-features">
+            <div class="feat-pill">
+              <i class="fa-solid fa-fire-burner"></i> Fresh Kadak Brews
+            </div>
+            <div class="feat-pill">
+              <i class="fa-solid fa-dice"></i> Carrom & Board Games
+            </div>
+            <div class="feat-pill">
+              <i class="fa-solid fa-wind"></i> Breezy Open-Air Seating
+            </div>
+            <div class="feat-pill">
+              <i class="fa-solid fa-music"></i> Curated Soulful Indie Tracks
+            </div>
+          </div>
+
+          <div class="story-btn-row">
+            <a href="#ambience" class="btn btn-secondary">
+              <i class="fa-solid fa-eye"></i> View The Ambience
+            </a>
+            <a href="#menu" class="btn btn-text">
+              See What We Serve <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Handcrafted Flavors</span>
+        <h2 class="section-title">Our Signature Café Menu</h2>
+        <p class="section-subtitle">
+          From steaming clay pots of traditional karak chai to artisan espresso, crispy layered parathas, and street food favorites.
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-tabs" id="menuTabs">
+          <button class="tab-btn active" data-filter="all">All Items</button>
+          <button class="tab-btn" data-filter="chai">Chai & Kahwa</button>
+          <button class="tab-btn" data-filter="coffee">Specialty Coffee</button>
+          <button class="tab-btn" data-filter="street">Karachi Street Eats</button>
+          <button class="tab-btn" data-filter="paratha">Parathas & Wraps</button>
+          <button class="tab-btn" data-filter="dessert">Sweet Treats</button>
+        </div>
+      </div>
+
+      <!-- Menu Grid Items -->
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- Item 1: Karak Doodh Patti -->
+        <article class="menu-card" data-category="chai">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Matka Karak Doodh Patti</h3>
+              <span class="item-badge badge-popular">Crowd Favorite</span>
+            </div>
+            <span class="item-price">PKR 280</span>
+          </div>
+          <p class="item-desc">
+            Slow-cooked whole milk steeped with premium tea leaves, cardamom pods, and topped with thick malai in an authentic baked clay matka.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-fire"></i> Served Scalding Hot</span>
+            <button class="order-add-btn" data-name="Matka Karak Doodh Patti" data-price="280">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 2: Kashmiri Chai -->
+        <article class="menu-card" data-category="chai">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Gulabi Kashmiri Chai</h3>
+              <span class="item-badge badge-special">Winter Warmth</span>
+            </div>
+            <span class="item-price">PKR 350</span>
+          </div>
+          <p class="item-desc">
+            Traditional pink tea brewed gently with green tea stems, star anise, sea salt hint, crushed pistachios, and slivered almonds.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-seedling"></i> Crushed Pistachios</span>
+            <button class="order-add-btn" data-name="Gulabi Kashmiri Chai" data-price="350">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 3: Peshawari Qehwa -->
+        <article class="menu-card" data-category="chai">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Peshawari Green Kahwa</h3>
+            </div>
+            <span class="item-price">PKR 220</span>
+          </div>
+          <p class="item-desc">
+            Light aromatic herbal green tea with crushed green cardamom, saffron threads, and served with a crystal rock candy stick.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-heart-pulse"></i> Detox & Digestion</span>
+            <button class="order-add-btn" data-name="Peshawari Green Kahwa" data-price="220">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 4: Spanish Latte -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Iced Spanish Latte</h3>
+              <span class="item-badge badge-bestseller">Top Pick</span>
+            </div>
+            <span class="item-price">PKR 620</span>
+          </div>
+          <p class="item-desc">
+            Double shot of velvety Brazilian espresso swirled over condensed sweet milk, fresh cream, and crystal ice cubes. Rich and addictive.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-snowflake"></i> Chilled Perfection</span>
+            <button class="order-add-btn" data-name="Iced Spanish Latte" data-price="620">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 5: Caramel Macchiato -->
+        <article class="menu-card" data-category="coffee">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Vanilla Salted Caramel Macchiato</h3>
+            </div>
+            <span class="item-price">PKR 650</span>
+          </div>
+          <p class="item-desc">
+            Freshly steamed milk with Madagascar vanilla syrup, marked with intense dark roast espresso and topped with house salted caramel drizzle.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-mug-hot"></i> Specialty Beans</span>
+            <button class="order-add-btn" data-name="Vanilla Caramel Macchiato" data-price="650">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 6: Karachi Classic Bun Kabab -->
+        <article class="menu-card" data-category="street">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Burns Road Shami Bun Kabab</h3>
+              <span class="item-badge badge-signature">Iconic</span>
+            </div>
+            <span class="item-price">PKR 340</span>
+          </div>
+          <p class="item-desc">
+            Authentic lentil & beef shami patty, dipped in whipped egg foam, griddled on cast iron, served on toasted brioche with tangy imli chutney and crunchy onions.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-pepper-hot"></i> House Imli Chutney</span>
+            <button class="order-add-btn" data-name="Burns Road Bun Kabab" data-price="340">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 7: Loaded Fries -->
+        <article class="menu-card" data-category="street">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Karachi Midnight Loaded Fries</h3>
+            </div>
+            <span class="item-price">PKR 540</span>
+          </div>
+          <p class="item-desc">
+            Crisp hand-cut potato wedges tossed in spicy masala, drenched in molten cheddar cheese sauce, garlic mayo, pickled jalapeños, and chicken chunks.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-cheese"></i> Double Melted Cheese</span>
+            <button class="order-add-btn" data-name="Karachi Midnight Loaded Fries" data-price="540">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 8: Nutella Paratha -->
+        <article class="menu-card" data-category="paratha">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Sizzling Nutella & Almond Paratha</h3>
+              <span class="item-badge badge-sweet">Sweet Sin</span>
+            </div>
+            <span class="item-price">PKR 490</span>
+          </div>
+          <p class="item-desc">
+            Multi-layered flaky paratha, stuffed hot with warm melted Nutella hazelnut spread, dusted with powdered sugar and toasted crushed almonds.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-candy-cane"></i> Best with Chai</span>
+            <button class="order-add-btn" data-name="Nutella & Almond Paratha" data-price="490">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 9: Chicken Cheese Malai Paratha -->
+        <article class="menu-card" data-category="paratha">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Chicken Malai Boti Cheese Roll</h3>
+              <span class="item-badge badge-popular">Best Seller</span>
+            </div>
+            <span class="item-price">PKR 520</span>
+          </div>
+          <p class="item-desc">
+            Charcoal-grilled tender chicken malai boti folded into crisp golden lachha paratha with mozzarella cheese, secret green herb sauce, and crispy shallots.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-drumstick-bite"></i> Charcoal Grilled</span>
+            <button class="order-add-btn" data-name="Chicken Malai Boti Roll" data-price="520">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 10: Gulab Jamun Cheesecake -->
+        <article class="menu-card" data-category="dessert">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Fusion Gulab Jamun Cheesecake</h3>
+              <span class="item-badge badge-special">Chef's Creation</span>
+            </div>
+            <span class="item-price">PKR 640</span>
+          </div>
+          <p class="item-desc">
+            Silky New York baked cheesecake infused with fragrant saffron cardamom cream, embedded with warm mini gulab jamuns on a Lotus Biscoff crust.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-award"></i> Signature Fusion</span>
+            <button class="order-add-btn" data-name="Gulab Jamun Cheesecake" data-price="640">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 11: Chocolate Lava Cake -->
+        <article class="menu-card" data-category="dessert">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Molten Belgian Lava Cake</h3>
+            </div>
+            <span class="item-price">PKR 590</span>
+          </div>
+          <p class="item-desc">
+            Rich dark chocolate fudge cake with a warm flowing molten center, served with a scoop of gourmet vanilla bean gelato and dark cocoa nibs.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-ice-cream"></i> Served with Gelato</span>
+            <button class="order-add-btn" data-name="Molten Belgian Lava Cake" data-price="590">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+        <!-- Item 12: Zafrani Matka Chai -->
+        <article class="menu-card" data-category="chai">
+          <div class="menu-card-header">
+            <div class="menu-card-title-group">
+              <h3 class="item-name">Royal Zafrani Saffron Chai</h3>
+              <span class="item-badge badge-signature">Royal Blend</span>
+            </div>
+            <span class="item-price">PKR 380</span>
+          </div>
+          <p class="item-desc">
+            Brewed with pure Persian saffron, whole evaporated buffalo milk, crushed green cardamom, and served in an earthen clay cup seasoned with smoke.
+          </p>
+          <div class="item-footer">
+            <span class="item-meta"><i class="fa-solid fa-crown"></i> Pure Persian Saffron</span>
+            <button class="order-add-btn" data-name="Royal Zafrani Chai" data-price="380">
+              <i class="fa-solid fa-plus"></i> Add
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Quick Cart Summary Bar (Interactive) -->
+      <div class="menu-order-summary" id="orderSummaryBar">
+        <div class="summary-left">
+          <span class="summary-cart-icon"><i class="fa-solid fa-bag-shopping"></i></span>
+          <span id="summaryCount">0 items selected</span>
+          <span class="summary-total" id="summaryTotal">Total: PKR 0</span>
+        </div>
+        <div class="summary-right">
+          <button class="btn btn-primary btn-sm" id="checkoutBtn" disabled>
+            Review & Order Via WhatsApp <i class="fa-brands fa-whatsapp"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Vibe & Ambience Section -->
+  <section class="section ambience-section" id="ambience">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Aesthetic Nights</span>
+        <h2 class="section-title">The "My Karachi" Experience</h2>
+        <p class="section-subtitle">
+          More than just a café — a sanctuary under glowing fairy lights where conversations never run dry.
+        </p>
+      </div>
+
+      <div class="ambience-grid">
+        <!-- Feature 1: The Iconic Mural -->
+        <div class="ambience-card highlight-card">
+          <div class="ambience-card-img">
+            <img src="images/my-karachi-bg.jpg" alt="Iconic yellow painted wall of My Karachi Cafe">
+            <div class="card-glow-tag">The Famous Wall</div>
+          </div>
+          <div class="ambience-card-content">
+            <h3>The Iconic Saffron Skyline Wall</h3>
+            <p>
+              Our hand-painted golden mural represents Karachi's architectural heritage — Quaid's Mausoleum, towering finance centers, Frere Hall, and Arabian Sea dhows. The ultimate selfie and group photo backdrop!
+            </p>
+            <div class="card-tags">
+              <span>#MyKarachiCafe</span>
+              <span>#KarachiSkyline</span>
+              <span>#FairyLights</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Feature 2: Fairy Lights Canopy -->
+        <div class="ambience-card">
+          <div class="ambience-icon-box">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+          <div class="ambience-card-content">
+            <h3>Warm Fairy Light Canopy</h3>
+            <p>
+              Golden string lights dangling across our open rooftop courtyard create a dreamlike, intimate glow that makes every evening feel like a celebration.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 3: Late Night Energy -->
+        <div class="ambience-card">
+          <div class="ambience-icon-box">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div class="ambience-card-content">
+            <h3>Midnight Chai Culture</h3>
+            <p>
+              Karachi truly awakens when the stars emerge. We keep the kettles roaring until 3:30 AM so night owls, creators, and friend circles never lack a place to bond.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 4: Board Games & Nostalgia -->
+        <div class="ambience-card">
+          <div class="ambience-icon-box">
+            <i class="fa-solid fa-dice-d20"></i>
+          </div>
+          <div class="ambience-card-content">
+            <h3>Ludo, Carrom & Board Games</h3>
+            <p>
+              Put your phones aside for a round of classic Carrom board or intense Ludo battles while savoring hot piping malai chai and crispy samosas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Feature 5: Unplugged Music -->
+        <div class="ambience-card">
+          <div class="ambience-icon-box">
+            <i class="fa-solid fa-guitar"></i>
+          </div>
+          <div class="ambience-card-content">
+            <h3>Acoustic & Coke Studio Vibes</h3>
+            <p>
+              Enjoy gentle Sufi, indie acoustic sessions, and nostalgic 90s Pakistani pop playing at the perfect volume to complement your conversations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Midnight Specials Banner -->
+  <section class="section specials-banner" id="specials">
+    <div class="container">
+      <div class="banner-inner">
+        <div class="banner-text">
+          <span class="banner-tag"><i class="fa-solid fa-fire"></i> Midnight Craving Special</span>
+          <h2 class="banner-heading">The "Gupshup Platter" For 4</h2>
+          <p class="banner-p">
+            Includes 4 Hot Clay Matka Chais, 2 Burns Road Bun Kababs, 1 Loaded Masala Fries Platter, and 1 Nutella Flaky Paratha. Perfect for your gang's midnight reunion.
+          </p>
+          <div class="banner-pricing">
+            <span class="old-price">PKR 2,400</span>
+            <span class="new-price">PKR 1,799</span>
+            <span class="save-badge">Save 25%</span>
+          </div>
+          <div class="banner-actions">
+            <a href="#reservation" class="btn btn-primary">Reserve For Tonight</a>
+            <a href="https://wa.me/923001234567?text=Hi!%20I%20want%20to%20order%20the%20Gupshup%20Platter%20for%20PKR%201,799" target="_blank" class="btn btn-glass">
+              <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="banner-graphic">
+          <div class="chai-cup-art">
+            <div class="steam-wrap">
+              <div class="steam s-1"></div>
+              <div class="steam s-2"></div>
+              <div class="steam s-3"></div>
+            </div>
+            <div class="clay-cup">
+              <div class="cup-lip"></div>
+              <div class="cup-body">
+                <span class="cup-text">My Karachi</span>
+              </div>
+            </div>
+            <div class="cup-saucer"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Testimonials -->
+  <section class="section reviews-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Word on the Street</span>
+        <h2 class="section-title">Loved by Karachiites & Travelers</h2>
+        <p class="section-subtitle">Here is what our regulars have to say about the vibe, chai, and memories created here.</p>
+      </div>
+
+      <div class="reviews-slider">
+        <div class="review-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "The yellow wall with the fairy lights immediately drew us in! The Matka Doodh Patti is pure nostalgia. Sitting outdoors at 1 AM with a bun kabab and friends is peak Karachi happiness."
+          </p>
+          <div class="reviewer-info">
+            <div class="avatar-circle">MA</div>
+            <div>
+              <strong>Mohammad Ali</strong>
+              <span>DHA Phase 6 Resident</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Honestly the best aesthetics in town. Most dhabas lack seating hygiene, but My Karachi Café combines the raw authentic Karachi taste with modern aesthetic coziness. 10/10!"
+          </p>
+          <div class="reviewer-info">
+            <div class="avatar-circle">SK</div>
+            <div>
+              <strong>Sarah Khan</strong>
+              <span>Architect & Food Blogger</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-quote">
+            "Their Nutella Paratha is crispy perfection, and their iced Spanish latte easily rivals high-end coffee houses. The staff is so courteous and the playlist is soulful."
+          </p>
+          <div class="reviewer-info">
+            <div class="avatar-circle">ZB</div>
+            <div>
+              <strong>Zain Bilgrami</strong>
+              <span>Night Owl & Freelancer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Table Reservation Section -->
+  <section class="section reservation-section" id="reservation">
+    <div class="container">
+      <div class="reservation-card-wrapper">
+        <div class="reservation-info">
+          <span class="section-tag">Save Your Spot</span>
+          <h2 class="section-title">Reserve A Table</h2>
+          <p class="res-desc">
+            Planning a weekend hangout, birthday surprise, or a late-night study circle? Book ahead to skip waiting, especially during peak midnight hours.
+          </p>
+
+          <div class="res-perk-list">
+            <div class="res-perk-item">
+              <i class="fa-solid fa-chair-office"></i>
+              <div>
+                <strong>Guaranteed Courtyard Seating</strong>
+                <p>Pick fairy light patio, cozy indoor, or rooftop breeze</p>
+              </div>
+            </div>
+            <div class="res-perk-item">
+              <i class="fa-solid fa-gift"></i>
+              <div>
+                <strong>Complimentary Welcome Kahwa</strong>
+                <p>For pre-booked tables of 4 or more guests</p>
+              </div>
+            </div>
+            <div class="res-perk-item">
+              <i class="fa-solid fa-cake-candles"></i>
+              <div>
+                <strong>Celebration Friendly</strong>
+                <p>Ask for special cake plating or candle arrangements</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="direct-booking-alert">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <span>Urgent Booking for tonight?</span>
+              <a href="https://wa.me/923001234567" target="_blank">Direct WhatsApp Helpline &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="reservation-form-container">
+          <form id="reservationForm" class="res-form">
+            <h3 class="form-title">Table Booking Form</h3>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resName">Full Name *</label>
+                <input type="text" id="resName" class="form-control" placeholder="e.g. Daniyal Siddiqui" required>
+              </div>
+              <div class="form-group">
+                <label for="resPhone">Phone Number *</label>
+                <input type="tel" id="resPhone" class="form-control" placeholder="0300-1234567" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resDate">Reservation Date *</label>
+                <input type="date" id="resDate" class="form-control" required>
+              </div>
+              <div class="form-group">
+                <label for="resTime">Expected Time *</label>
+                <select id="resTime" class="form-control" required>
+                  <option value="" disabled selected>Select Time Slot</option>
+                  <option value="06:00 PM">06:00 PM - Early Sunset</option>
+                  <option value="08:00 PM">08:00 PM - Dinner Time</option>
+                  <option value="10:00 PM">10:00 PM - Prime Chai Hours</option>
+                  <option value="11:30 PM">11:30 PM - Midnight Vibe</option>
+                  <option value="01:00 AM">01:00 AM - Late Night Chill</option>
+                  <option value="02:30 AM">02:30 AM - Last Call</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resGuests">Number of Guests *</label>
+                <select id="resGuests" class="form-control" required>
+                  <option value="1">1 Person (Quiet corner / Work)</option>
+                  <option value="2" selected>2 Persons (Cozy Date / Chat)</option>
+                  <option value="3 to 4">3 - 4 Persons (Squad)</option>
+                  <option value="5 to 8">5 - 8 Persons (Family / Gang)</option>
+                  <option value="9+">9+ Persons (Party / Group)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="resSeating">Seating Preference</label>
+                <select id="resSeating" class="form-control">
+                  <option value="Fairy Light Wall Courtyard">Fairy Light Mural Courtyard</option>
+                  <option value="Rooftop Breeze Seating">Rooftop Breeze Seating</option>
+                  <option value="Air Conditioned Indoor">Indoor Cozy AC Bistro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="resNotes">Special Requests (Optional)</label>
+              <textarea id="resNotes" class="form-control" rows="2" placeholder="Birthday cake setup, ludo board request, etc."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 btn-submit">
+              <i class="fa-solid fa-check"></i> Confirm Reservation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location & Timings Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">Visit Us</span>
+        <h2 class="section-title">Drop by Tonight</h2>
+        <p class="section-subtitle">Karachi's favorite open-air destination for evening unwind & midnight tea.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card info-box">
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <div>
+              <h4>Location & Landmark</h4>
+              <p>Plot 42-C, 10th Commercial Street, Phase 8, DHA (Near Do Darya Coastal Strip), Karachi, Pakistan</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+            <div>
+              <h4>Operating Hours</h4>
+              <p>Monday – Thursday: <strong>5:00 PM – 3:00 AM</strong></p>
+              <p>Friday – Sunday: <strong>5:00 PM – 4:00 AM</strong></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-phone-volume"></i></div>
+            <div>
+              <h4>Phone & WhatsApp</h4>
+              <p>+92 300 2424242 / +92 21 35850000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h4>Email Inquiries</h4>
+              <p>gupshup@mykarachicafe.pk</p>
+            </div>
+          </div>
+
+          <div class="social-links-row">
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- Stylized Map / Landmark Visual Card -->
+        <div class="contact-card map-visual-card">
+          <div class="map-inner-content">
+            <div class="map-badge">
+              <i class="fa-solid fa-compass"></i> City of Lights Map
+            </div>
+            <h3>Easily Accessible from Clifton & Defence</h3>
+            <p>
+              Located just 5 minutes away from the refreshing sea breeze, with spacious outdoor parking and valet available on weekends.
+            </p>
+            <div class="landmark-pins">
+              <div class="pin"><i class="fa-solid fa-umbrella-beach"></i> 5 mins from Do Darya</div>
+              <div class="pin"><i class="fa-solid fa-landmark"></i> 12 mins from Clifton Bilawal House</div>
+              <div class="pin"><i class="fa-solid fa-car"></i> Valet Parking Available</div>
+            </div>
+            <a href="https://maps.google.com" target="_blank" class="btn btn-secondary btn-sm mt-3">
+              <i class="fa-solid fa-diamond-turn-right"></i> Open in Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Confirmation Modal -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-badge-success">
+          <i class="fa-solid fa-circle-check"></i>
+        </div>
+        <h3>Table Reserved Successfully!</h3>
+        <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBookingDetails">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary w-100" id="modalDoneBtn">Awesome, See You There!</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- WhatsApp Floating Sticky Button -->
+  <a href="https://wa.me/923001234567?text=Hi%20My%20Karachi%20Cafe!%20I%20would%20like%20to%20place%20an%20order%20or%20reserve%20a%20table." target="_blank" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-tooltip">Order Chai on WhatsApp</span>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-col brand-col">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="brand-sub">The Spirit of</span>
+          <span class="brand-main">My Karachi <span class="cafe-tag">Café</span></span>
+        </a>
+        <p class="footer-about">
+          A heartfelt ode to the vibrant sleepless nights of Karachi. Good food, timeless music, hot matka tea, and the warmest memories.
+        </p>
+        <div class="footer-cert">
+          <span>✨ Freshly brewed every single evening</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">The Story</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#ambience">Atmosphere & Vibe</a></li>
+          <li><a href="#reservation">Book Table</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Popular Items</h4>
+        <ul class="footer-nav">
+          <li><a href="#menu">Karak Doodh Patti</a></li>
+          <li><a href="#menu">Burns Road Bun Kabab</a></li>
+          <li><a href="#menu">Zafrani Matka Chai</a></li>
+          <li><a href="#menu">Sizzling Nutella Paratha</a></li>
+          <li><a href="#menu">Spanish Iced Latte</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Stay Connected</h4>
+        <p class="footer-sub-text">Subscribe for secret midnight discount codes & acoustic night invites.</p>
+        <form class="footer-newsletter" id="newsletterForm">
+          <input type="email" placeholder="Enter your email" required class="newsletter-input">
+          <button type="submit" class="newsletter-submit-btn" aria-label="Subscribe">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+        <div id="newsletterSuccess" class="newsletter-msg">Subscribed! Check inbox for secret perks.</div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> My Karachi Café. All Rights Reserved. Crafted with love in Karachi.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <span>•</span>
+          <a href="#">Terms & Vibe Rules</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
